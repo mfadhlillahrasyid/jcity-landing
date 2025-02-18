@@ -14,22 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
 // Facilities Items
 const testimonials = [
   {
-    path: `${window.location.origin}/jcity-landing/public/facility/Masjid.webp`,
+    path: `${window.location.origin}/public/facility/Masjid.webp`,
     title: "Masjid",
     subtitle: "Ibadah Tetap lancar karena Dekat dari rumah",
   },
   {
-    path: `${window.location.origin}/jcity-landing/public/facility/Kolam-Renang.webp`,
+    path: `${window.location.origin}/public/facility/Kolam-Renang.webp`,
     title: "Kolam Renang",
     subtitle: "Weekend santai bareng keluarga di rumah sendiri.",
   },
   {
-    path: `${window.location.origin}/jcity-landing/public/facility/bungalou.webp`,
+    path: `${window.location.origin}/public/facility/bungalou.webp`,
     title: "Area Ritel",
     subtitle: "Semua kebutuhan sehari-hari ada di dekat rumah.",
   },
   {
-    path: `${window.location.origin}/jcity-landing/public/facility/Area-Jalan.webp`,
+    path: `${window.location.origin}/public/facility/Area-Jalan.webp`,
     title: "Area Bermain",
     subtitle: "Bisa jogging, healing, atau main sama anak-anak.",
   },
@@ -58,7 +58,7 @@ const properties = [
     id: 1,
     type: "J-Paradise L. 6m",
     price: "Rp 1,64 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/j-paradise-maket.webp`],
+    images: [`${window.location.origin}/public/type/j-paradise-maket.webp`],
     lt: 72,
     lb: 110,
     kt: 3,
@@ -70,7 +70,7 @@ const properties = [
     id: 2,
     type: "J-Paradise L. 8m",
     price: "Rp 2,8 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/j-paradise-maket-2.webp`],
+    images: [`${window.location.origin}/public/type/j-paradise-maket-2.webp`],
     lt: 112,
     lb: 175,
     kt: 4,
@@ -82,7 +82,7 @@ const properties = [
     id: 3,
     type: "Vienna",
     price: "Rp 1,44 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/1.-Vienna-Type-6-depan-300x200.webp`],
+    images: [`${window.location.origin}/public/type/1.-Vienna-Type-6-depan-300x200.webp`],
     lt: 90,
     lb: 72,
     kt: 2,
@@ -94,7 +94,7 @@ const properties = [
     id: 4,
     type: "Vienna Elite",
     price: "Rp 1,59 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/1.-Vienna-Type-6-depan-1-300x200.webp`],
+    images: [`${window.location.origin}/public/type/1.-Vienna-Type-6-depan-1-300x200.webp`],
     lt: 90,
     lb: 97,
     kt: 3,
@@ -106,7 +106,7 @@ const properties = [
     id: 5,
     type: "J-Elite V",
     price: "Rp 1,81 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Elite-Type-V-depan-300x200.webp`],
+    images: [`${window.location.origin}/public/type/1.-J.-Elite-Type-V-depan-300x200.webp`],
     lt: 84,
     lb: 112,
     kt: 3,
@@ -118,7 +118,7 @@ const properties = [
     id: 6,
     type: "J-Crown Type Jade",
     price: "Rp 3,02 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Crown-depan-300x200.webp`],
+    images: [`${window.location.origin}/public/type/1.-J.-Crown-depan-300x200.webp`],
     lt: 128,
     lb: 175,
     kt: 4,
@@ -220,7 +220,7 @@ const propertiesBussiness = [
     id: 1,
     type: "J-Square",
     price: "Rp 2,44 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Square-depan-300x200.webp`],
+    images: [`${window.location.origin}/public/type/1.-J.-Square-depan-300x200.webp`],
     lt: 64,
     lb: 192,
     status: "Sold Out",
@@ -229,7 +229,7 @@ const propertiesBussiness = [
     id: 2,
     type: "J-Point A",
     price: "Rp 2,55 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Point-Type-A-depan-300x200.webp`],
+    images: [`${window.location.origin}/public/type/1.-J.-Point-Type-A-depan-300x200.webp`],
     lt: 72,
     lb: 246,
     status: "Unit Available",
@@ -238,7 +238,7 @@ const propertiesBussiness = [
     id: 3,
     type: "J-Point B",
     price: "Rp 3,09 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Point-Type-B-depan-1-300x200.webp`],
+    images: [`${window.location.origin}/public/type/1.-J.-Point-Type-B-depan-1-300x200.webp`],
     lt: 87,
     lb: 298,
     status: "Unit Available",
@@ -247,7 +247,7 @@ const propertiesBussiness = [
     id: 3,
     type: "J-Line",
     price: "Rp 5,17 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Line-depan-300x200.webp`],
+    images: [`${window.location.origin}/public/type/1.-J.-Line-depan-300x200.webp`],
     lt: 144,
     lb: 504,
     status: "Unit Available",
@@ -256,7 +256,7 @@ const propertiesBussiness = [
     id: 4,
     type: "Cemara Bussiness Point",
     price: "Rp 1,7 Miliar",
-    images: [`${window.location.origin}/jcity-landing/public/type/img3-300x200.webp`],
+    images: [`${window.location.origin}/public/type/img3-300x200.webp`],
     lt: 60,
     lb: 200,
     status: "Unit Available",
@@ -336,49 +336,49 @@ const facilities = [
   {
     id: 1,
     images: [
-      `${window.location.origin}/jcity-landing/public/facility/bandara-kualanamu.webp`,
+      `${window.location.origin}/public/facility/bandara-kualanamu.webp`,
     ],
   },
   {
     id: 2,
     images: [
-      `${window.location.origin}/jcity-landing/public/facility/Gerbang-Tol-Helvetia.webp`,
+      `${window.location.origin}/public/facility/Gerbang-Tol-Helvetia.webp`,
     ]
   },
   {
     id: 3,
     images: [
-      `${window.location.origin}/jcity-landing/public/facility/carefour.webp`,
+      `${window.location.origin}/public/facility/carefour.webp`,
     ],
   },
   {
     id: 4,
     images: [
-      `${window.location.origin}/jcity-landing/public/facility/rs-mitra-sejati.jpg`,
+      `${window.location.origin}/public/facility/rs-mitra-sejati.jpg`,
     ],
   },
   {
     id: 5,
     images: [
-      `${window.location.origin}/jcity-landing/public/facility/Sekolah-as-syafiyah.jpg`,
+      `${window.location.origin}/public/facility/Sekolah-as-syafiyah.jpg`,
     ],
   },
   {
     id: 6,
     images: [
-      `${window.location.origin}/jcity-landing/public/facility/alazhar.webp`,
+      `${window.location.origin}/public/facility/alazhar.webp`,
     ],
   },
   {
     id: 7,
     images: [
-      `${window.location.origin}/jcity-landing/public/facility/st-ignatius.jpg`,
+      `${window.location.origin}/public/facility/st-ignatius.jpg`,
     ],
   },
   {
     id: 8,
     images: [
-      `${window.location.origin}/jcity-landing/public/facility/stmik-triguna-dharma.jpg`,
+      `${window.location.origin}/public/facility/stmik-triguna-dharma.jpg`,
     ],
   },
 ];
