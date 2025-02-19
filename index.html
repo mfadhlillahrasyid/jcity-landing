@@ -31,9 +31,15 @@
       'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1266021014699952');
     fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
   </script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1266021014699952&ev=PageView&noscript=1" /></noscript>
+      <script>
+        function CallToAction() {
+        fbq("track", "Contact");
+        }
+    </script>
   <!-- End Meta Pixel Code -->
 </head>
 
@@ -415,7 +421,7 @@
     </p>
   </div>
   <div class="bg-white p-10 mx-auto text-sm md:text-lg leading-6 md:leading-8 font-medium flex flex-col">
-    <a href="https://wa.me/6281234567890" class="block active:scale-95 transition-transform duration-200">
+    <a href="https://wa.me/6281234567890" onClick="CallToAction()" class="block active:scale-95 transition-transform duration-200">
       <img src="/jcity-landing/public/cta.png" class="block" alt="Jcity-img" />
     </a>
   </div>
