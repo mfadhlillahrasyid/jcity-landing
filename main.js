@@ -56,8 +56,8 @@ testimonials.forEach((testimonial) => {
 const properties = [
   {
     id: 1,
-    type: "J-Paradise L. 6m",
-    price: "Rp 1,64 Miliar",
+    price: "J-Paradise L. 6m",
+    type: "Family Mansion",
     images: [`${window.location.origin}/jcity-landing/public/type/j-paradise-maket.webp`],
     lt: 72,
     lb: 110,
@@ -68,32 +68,32 @@ const properties = [
   },
   {
     id: 2,
-    type: "J-Paradise L. 8m",
-    price: "Rp 2,8 Miliar",
+    price: "J-Paradise L. 8m",
+    type: "Family Mansion",
     images: [`${window.location.origin}/jcity-landing/public/type/j-paradise-maket-2.webp`],
     lt: 112,
     lb: 175,
     kt: 4,
     km: 3,
     carport: 2,
-    status: "Sold Out",
+    status: "Unit Available",
   },
   {
     id: 3,
-    type: "Vienna",
-    price: "Rp 1,44 Miliar",
+    price: "Vienna",
+    type: "Family Mansion",
     images: [`${window.location.origin}/jcity-landing/public/type/1.-Vienna-Type-6-depan-300x200.webp`],
     lt: 90,
     lb: 72,
     kt: 2,
     km: 2,
     carport: 1,
-    status: "Unit Available",
+    status: "Sold Out",
   },
   {
     id: 4,
-    type: "Vienna Elite",
-    price: "Rp 1,59 Miliar",
+    price: "Vienna Elite",
+    type: "Family Mansion",
     images: [`${window.location.origin}/jcity-landing/public/type/1.-Vienna-Type-6-depan-1-300x200.webp`],
     lt: 90,
     lb: 97,
@@ -104,8 +104,8 @@ const properties = [
   },
   {
     id: 5,
-    type: "J-Elite V",
-    price: "Rp 1,81 Miliar",
+    price: "J-Elite V",
+    type: "Family Mansion",
     images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Elite-Type-V-depan-300x200.webp`],
     lt: 84,
     lb: 112,
@@ -116,15 +116,15 @@ const properties = [
   },
   {
     id: 6,
-    type: "J-Crown Type Jade",
-    price: "Rp 3,02 Miliar",
+    price: "J-Crown Type Jade",
+    type: "Family Mansion",
     images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Crown-depan-300x200.webp`],
     lt: 128,
     lb: 175,
     kt: 4,
     km: 3,
     carport: 2,
-    status: "Sold Out",
+    status: "Unit Available",
   },
 ];
 
@@ -156,7 +156,7 @@ properties.forEach((property) => {
     </div>
 
     <div class="px-6 pb-6">
-          <h3 class="text-2xl font-extrabold mt-7 text-gray-800">${property.type}</h3>
+          <h3 class="text-lg font-extrabold mt-7 text-gray-800">${property.type}</h3>
     <p class="text-4xl tracking-tight text-amber-600 font-extrabold">${
       property.price
     }</p>
@@ -218,17 +218,17 @@ properties.forEach((property) => {
 const propertiesBussiness = [
   {
     id: 1,
-    type: "J-Square",
-    price: "Rp 2,44 Miliar",
+    price: "J-Square",
+    type: "Bussiness",
     images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Square-depan-300x200.webp`],
     lt: 64,
     lb: 192,
-    status: "Sold Out",
+    status: "Unit Available",
   },
   {
     id: 2,
-    type: "J-Point A",
-    price: "Rp 2,55 Miliar",
+    price: "J-Point A",
+    type: "Bussiness",
     images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Point-Type-A-depan-300x200.webp`],
     lt: 72,
     lb: 246,
@@ -236,8 +236,8 @@ const propertiesBussiness = [
   },
   {
     id: 3,
-    type: "J-Point B",
-    price: "Rp 3,09 Miliar",
+    price: "J-Point B",
+    type: "Bussiness",
     images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Point-Type-B-depan-1-300x200.webp`],
     lt: 87,
     lb: 298,
@@ -245,8 +245,8 @@ const propertiesBussiness = [
   },
   {
     id: 3,
-    type: "J-Line",
-    price: "Rp 5,17 Miliar",
+    price: "J-Line",
+    type: "Bussiness",
     images: [`${window.location.origin}/jcity-landing/public/type/1.-J.-Line-depan-300x200.webp`],
     lt: 144,
     lb: 504,
@@ -254,8 +254,8 @@ const propertiesBussiness = [
   },
   {
     id: 4,
-    type: "Cemara Bussiness Point",
-    price: "Rp 1,7 Miliar",
+    price: "Cemara Bisnis Point",
+    type: "Bussiness",
     images: [`${window.location.origin}/jcity-landing/public/type/img3-300x200.webp`],
     lt: 60,
     lb: 200,
