@@ -1,22 +1,23 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+
 export const facilityLists = [
   {
-    path: "./facility/Masjid.webp",
+    path: "/facility/Masjid.webp",
     title: "Masjid",
     desc: "Ibadah tetap lancar karena dekat dari rumah",
   },
   {
-    path: "./facility/Kolam-Renang.webp",
+    path: "/facility/Kolam-Renang.webp",
     title: "Kolam Renang",
     desc: "Weekend santai bareng keluarga di rumah sendiri.",
   },
   {
-    path: "./facility/bungalou.webp",
+    path: "/facility/bungalou.webp",
     title: "Area Ritel",
     desc: "Semua kebutuhan sehari-hari ada di dekat rumah",
   },
   {
-    path: "./facility/Area-Jalan.webp",
+    path: "/facility/Area-Jalan.webp",
     title: "Area Bermain",
     desc: "Bisa jogging, healing, atau main sama anak-anak",
   },
@@ -33,8 +34,10 @@ export function List3({ items }: { items: ListItem[] }) {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       {items.map((item, index) => (
         <div key={index} className="rounded-2xl overflow-hidden bg-amber-800">
-          <img
+          <Image
             src={item.path}
+            width={540}
+            height={540}
             alt={`Fasilitas: ${item.title}`}
             className="w-full h-48 object-cover"
           />

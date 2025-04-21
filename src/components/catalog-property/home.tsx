@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import { FaHome, FaBuilding, FaBed, FaBath, FaCar } from "react-icons/fa";
 
 interface PropertyItem {
@@ -19,8 +18,10 @@ export function PropertyCard({ property }: { property: PropertyItem }) {
   return (
     <div className="bg-white shadow-2xl rounded-2xl overflow-hidden mt-7 mb-12">
       <div className="relative w-full aspect-video h-[14rem]">
-        <img
+        <Image
           src={property.images[0]}
+          width={300}
+          height={200}
           alt={property.type}
           className="w-full h-full object-cover"
         />

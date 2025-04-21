@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import { JSX } from "react";
 
 export interface Item {
@@ -13,9 +12,11 @@ export function Facilities2({ facility }: { facility: Item }) {
   return (
     <div className="bg-white shadow-2xl rounded-2xl overflow-hidden mt-7 mb-12">
       <div className="relative w-full">
-        <img
+        <Image
           src={facility.images[0]}
           alt={facility.desc}
+          width={540}
+          height={540}
           className="object-cover bg-white rounded-2xl"
         />
 

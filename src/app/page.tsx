@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { List, problemLists } from "@/components/lists/problem-lists";
@@ -21,6 +20,7 @@ import {
   FaWhatsapp,
   FaStreetView,
 } from "react-icons/fa";
+import Image from "next/image";
 
 const properties = [
   {
@@ -102,7 +102,7 @@ const propertiesBussiness = [
     id: 1,
     price: "J-Square",
     type: "Bussiness",
-    images: [`./type/1.-J.-Square-depan-300x200.webp`],
+    images: [`/type/1.-J.-Square-depan-300x200.webp`],
     lt: 64,
     lb: 192,
     status: "Unit Tersedia",
@@ -111,7 +111,7 @@ const propertiesBussiness = [
     id: 2,
     price: "J-Point A",
     type: "Bussiness",
-    images: [`./type/1.-J.-Point-Type-A-depan-300x200.webp`],
+    images: [`/type/1.-J.-Point-Type-A-depan-300x200.webp`],
     lt: 72,
     lb: 246,
     status: "Unit Tersedia",
@@ -120,7 +120,7 @@ const propertiesBussiness = [
     id: 3,
     price: "J-Point B",
     type: "Bussiness",
-    images: [`./type/1.-J.-Point-Type-B-depan-1-300x200.webp`],
+    images: [`/type/1.-J.-Point-Type-B-depan-1-300x200.webp`],
     lt: 87,
     lb: 298,
     status: "Unit Tersedia",
@@ -129,7 +129,7 @@ const propertiesBussiness = [
     id: 4,
     price: "J-Line",
     type: "Bussiness",
-    images: [`./type/1.-J.-Line-depan-300x200.webp`],
+    images: [`/type/1.-J.-Line-depan-300x200.webp`],
     lt: 144,
     lb: 504,
     status: "Unit Tersedia",
@@ -138,7 +138,7 @@ const propertiesBussiness = [
     id: 5,
     price: "Cemara Bisnis Point",
     type: "Bussiness",
-    images: [`./type/img3-300x200.webp`],
+    images: [`/type/img3-300x200.webp`],
     lt: 60,
     lb: 200,
     status: "Unit Tersedia",
@@ -150,49 +150,49 @@ const facilities = [
     id: 1,
     icon: <FaPlane />,
     desc: "Bandara Kuala Namu 40 Menit",
-    images: [`./facility/bandara-kualanamu.webp`],
+    images: [`/facility/bandara-kualanamu.webp`],
   },
   {
     id: 2,
     icon: <FaRoad />,
     desc: "Tol Helvetia 30 menit",
-    images: [`./facility/Gerbang-Tol-Helvetia.webp`],
+    images: [`/facility/Gerbang-Tol-Helvetia.webp`],
   },
   {
     id: 3,
     icon: <FaShoppingCart />,
     desc: "Carrefour 7 menit",
-    images: [`./facility/carefour.webp`],
+    images: [`/facility/carefour.webp`],
   },
   {
     id: 4,
     icon: <FaHospitalAlt />,
     desc: "RS Mitra Sejati 10 menit",
-    images: [`./facility/rs-mitra-sejati.jpg`],
+    images: [`/facility/rs-mitra-sejati.jpg`],
   },
   {
     id: 5,
     icon: <FaSchool />,
     desc: "Sekolah As-Syafiiyah 8 menit",
-    images: [`./facility/Sekolah-as-syafiyah.jpg`],
+    images: [`/facility/Sekolah-as-syafiyah.jpg`],
   },
   {
     id: 6,
     icon: <FaSchool />,
     desc: "Sekolah Al-Azhar 8 menit",
-    images: [`./facility/alazhar.webp`],
+    images: [`/facility/alazhar.webp`],
   },
   {
     id: 7,
     icon: <FaSchool />,
     desc: "Sekolah St Ignatius 8 menit",
-    images: [`./facility/st-ignatius.jpg`],
+    images: [`/facility/st-ignatius.jpg`],
   },
   {
     id: 8,
     icon: <FaUniversity />,
     desc: "STMIK Triguna Dharma 8 menit",
-    images: [`./facility/stmik-triguna-dharma.jpg`],
+    images: [`/facility/stmik-triguna-dharma.jpg`],
   },
 ];
 
@@ -212,7 +212,13 @@ export default function Home() {
   return (
     <>
       <div className="bg-neutral-300 max-w-lg mx-auto font-medium">
-        <img src="./1.webp" className="bg-white" alt="Jcity-img" />
+        <Image
+          src="/1.webp"
+          width={1080}
+          height={1590}
+          className="bg-white"
+          alt="Jcity-img"
+        />
 
         <div className="bg-white text-sm md:text-[16px] leading-6 md:leading-7 mx-auto pb-10 px-10 space-y-3">
           <p className="text-neutral-700">
@@ -232,11 +238,19 @@ export default function Home() {
           </p>
         </div>
 
-        <img src="./2.webp" className="bg-white" alt="Jcity-img" />
+        <Image
+          src="/2.webp"
+          width={800}
+          height={600}
+          className="bg-white"
+          alt="Jcity-img"
+        />
 
         <div className="bg-white p-10 mx-auto text-sm md:text-[16px] leading-6 md:leading-7 flex flex-col items-center">
-          <img
-            src="./logo-jcity.png"
+          <Image
+            src="/logo-jcity.png"
+            width={300}
+            height={138}
             alt="Logo Jcity"
             className="w-auto h-19"
           />
@@ -310,7 +324,13 @@ export default function Home() {
           </p>
         </div>
 
-        <img src="./3.webp" className="bg-white" alt="Jcity-img" />
+        <Image
+          src="/3.webp"
+          width={800}
+          height={600}
+          className="bg-white"
+          alt="Jcity-img"
+        />
 
         <div className="bg-white pt-10 px-10 mx-auto text-lg leading-8 items-center">
           <p className="text-sm md:text-[16px] leading-6 md:leading-7 text-neutral-700">
@@ -380,7 +400,13 @@ export default function Home() {
           </p>
         </div>
 
-        <img src="./5.webp" className="bg-white" alt="Jcity-img" />
+        <Image
+          src="/5.webp"
+          width={800}
+          height={600}
+          className="bg-white"
+          alt="Jcity-img"
+        />
 
         <div className="bg-white px-10 mx-auto text-sm md:text-[16px] leading-6 md:leading-7 flex flex-col">
           <p className="text-neutral-700 mt-5">
@@ -442,7 +468,13 @@ export default function Home() {
           </div>
         </div>
 
-        <img src="./footer.png" className="bg-white" alt="Jcity-img" />
+        <Image
+          src="/footer.png"
+          width={800}
+          height={473}
+          className="bg-white"
+          alt="Jcity-img"
+        />
 
         <div className="bg-amber-800 text-white p-6 text-center">
           <p className="text-sm">&copy; 2024 JCity. All Right Reserved</p>
