@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 export const facilityLists = [
   {
-    path: "./facility/masjid.webp",
+    path: "./facility/Masjid.webp",
     title: "Masjid",
     desc: "Ibadah tetap lancar karena dekat dari rumah",
   },
